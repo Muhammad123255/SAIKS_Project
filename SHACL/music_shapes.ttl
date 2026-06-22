@@ -1,0 +1,91 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix : <http://example.org/music-ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ConcertShape
+    a sh:NodeShape ;
+    sh:targetClass :Concert ;
+    sh:property [
+        sh:path :title ;
+        sh:minCount 1 ;
+        sh:message "Concert must have a title." ;
+    ] ;
+    sh:property [
+        sh:path :eventDate ;
+        sh:minCount 1 ;
+        sh:message "Concert must have an event date." ;
+    ] ;
+    sh:property [
+        sh:path :ticketPrice ;
+        sh:minCount 1 ;
+        sh:datatype xsd:decimal ;
+        sh:message "Concert must have a ticket price." ;
+    ] .
+
+:VenueShape
+    a sh:NodeShape ;
+    sh:targetClass :Venue ;
+    sh:property [
+        sh:path :name ;
+        sh:minCount 1 ;
+        sh:message "Venue must have a name." ;
+    ] ;
+    sh:property [
+        sh:path :capacity ;
+        sh:datatype xsd:integer ;
+        sh:message "Venue capacity must be an integer." ;
+    ] .
+
+:ArtistShape
+    a sh:NodeShape ;
+    sh:targetClass :Musician ;
+    sh:property [
+        sh:path :name ;
+        sh:minCount 1 ;
+        sh:message "Artist must have a name." ;
+    ] .
+
+:AlbumShape
+    a sh:NodeShape ;
+    sh:targetClass :Album ;
+    sh:property [
+        sh:path :title ;
+        sh:minCount 1 ;
+        sh:message "Album must have a title." ;
+    ] .
+
+:TrackShape
+    a sh:NodeShape ;
+    sh:targetClass :Track ;
+    sh:property [
+        sh:path :title ;
+        sh:minCount 1 ;
+        sh:message "Track must have a title." ;
+    ] .
+
+:GenreShape
+    a sh:NodeShape ;
+    sh:targetClass :Genre ;
+    sh:property [
+        sh:path :name ;
+        sh:minCount 1 ;
+        sh:message "Genre must have a name." ;
+    ] .
+
+:TourShape
+    a sh:NodeShape ;
+    sh:targetClass :Tour ;
+    sh:property [
+        sh:path :name ;
+        sh:minCount 1 ;
+        sh:message "Tour must have a name." ;
+    ] .
+
+:RecordLabelShape
+    a sh:NodeShape ;
+    sh:targetClass :RecordLabel ;
+    sh:property [
+        sh:path :name ;
+        sh:minCount 1 ;
+        sh:message "Record label must have a name." ;
+    ] .

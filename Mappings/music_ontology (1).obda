@@ -1,0 +1,154 @@
+[PrefixDeclaration]
+:		http://example.org/music-ontology#
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+obda:		https://w3id.org/obda/vocabulary#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+dcterms:		http://example.org/music-ontology#dcterms:
+
+[MappingDeclaration] @collection [[
+mappingId	mapping--2068145412
+target		<http://example.org/music-kg/artist/{artist_id}> :receivedAward <http://example.org/music-kg/award/{award_id}> . 
+source		SELECT * FROM Award
+
+mappingId	mapping--1602984165
+target		<http://example.org/music-kg/artist/{artist_id}> a :Musician , :{musician_type} ; :name {artist_name}^^xsd:string ; :id {artist_id}^^xsd:integer . 
+source		SELECT * FROM Artist
+
+mappingId	mapping-2023288492
+target		<http://example.org/music-kg/concert/{concert_id}> a :Concert ; :hostedAt <http://example.org/music-kg/venue/{venue_id}> ; :eventDate {event_date}^^xsd:date ; :eventTime {event_time}^^xsd:string ; :isPartOfTour <http://example.org/music-kg/tour/{tour_id}> ; :ticketPrice {ticket_price}^^xsd:decimal ; :audienceCount {audience}^^xsd:integer ; :entityCode {concert_id}^^xsd:integer ; :title {title}^^xsd:string . 
+source		SELECT * FROM Concert
+
+mappingId	mapping-472521684
+target		<http://example.org/music-kg/award/{award_id}> :description {category}^^xsd:string ; :name {name}^^xsd:string ; :releaseYear {year}^^xsd:integer . 
+source		SELECT * FROM Award
+
+mappingId	mapping--1987081255
+target		<http://example.org/music-kg/venue/{venue_id}> a :Venue , :{venue_type} ; :name {name}^^xsd:string ; :location {location}^^xsd:string ; :capacity {capacity}^^xsd:integer ; :entityCode {venue_id}^^xsd:integer . 
+source		SELECT * FROM Venue
+
+mappingId	mapping-1151052199
+target		<http://example.org/music-kg/genre/{genre_id}> a :Genre ; :name {genre_name}^^xsd:string . 
+source		SELECT * FROM Genre
+
+mappingId	mapping-2047128223
+target		<http://example.org/music-kg/track/{track_id}> a :Track ; :title {track_name}^^xsd:string ; :durationInSeconds {duration_ms}^^xsd:integer ; :trackIsPartOf <http://example.org/music-kg/album/{album_id}> ; :hasGenre <http://example.org/music-kg/genre/{genre_id}> . 
+source		SELECT * FROM Track
+
+mappingId	mapping-226870670
+target		<http://example.org/music-kg/artist/{artist_id}> :releasedUnder <http://example.org/music-kg/label/{label_id}> . 
+source		SELECT artist_id, label_id FROM Artist WHERE label_id IS NOT NULL
+
+mappingId	mapping-2098810269
+target		<http://example.org/music-kg/label/{label_id}> a :RecordLabel ; :name {name}^^xsd:string ; :location {location}^^xsd:string . 
+source		SELECT * FROM RecordLabel
+
+mappingId	mapping--26624672
+target		<http://example.org/music-kg/tour/{tour_id}> a :Tour ; :name {name}^^xsd:string ; :eventDate {start_date}^^xsd:date ; :entityCode {tour_id}^^xsd:integer . 
+source		SELECT * FROM Tour
+
+mappingId	mapping--1944492199
+target		<http://example.org/music-kg/album/{album_id}> a :Album ; :title {album_name}^^xsd:string ; :releaseYear {release_date}^^xsd:string . 
+source		SELECT * FROM Album
+
+mappingId	MAPID-1508453982a54e89a3e6398ed4772d89
+target		<http://example.org/music-kg/instrument/{instrument_id}> a :Instrument , :{instrument_type}Intrument ; :name {name}^^xsd:string ; :instrumentType {instrument_type}^^xsd:string . 
+source		SELECT * FROM Instrument
+
+mappingId	MAPID-76d43565f10844e284fa33b3a52e504b
+target		<http://example.org/music-kg/artist/{artist_id}> :playsInstrument <http://example.org/music-kg/instrument/{instrument_id}> . 
+source		SELECT * FROM ArtistInstrument
+
+mappingId	MAPID-262c4972430b4bf694c2df2489383249
+target		<http://example.org/music-kg/composer/{composer_id}> a :Composer ; :firstName {first_name}^^xsd:string ; :lastName {last_name}^^xsd:string ; :nationality {nationality}^^xsd:string . 
+source		SELECT * FROM Composer
+
+mappingId	MAPID-f45a0517387e4f70aa03adea9e3e8602
+target		<http://example.org/music-kg/composer/{composer_id}> :createdWork <http://example.org/music-kg/album/{album_id}> . 
+source		SELECT * FROM AlbumComposer
+
+mappingId	MAPID-e006b16790304c8db261f86b084dcec8
+target		<http://example.org/music-kg/genre/{genre_id}> a :RockGenre . 
+source		SELECT genre_id
+			FROM Genre
+			WHERE genre_name = 'rock'
+
+mappingId	MAPID-e006b16790304c8db261f86b084dcec8(0)
+target		<http://example.org/music-kg/genre/{genre_id}> a :PopGenre . 
+source		SELECT genre_id
+			FROM Genre
+			WHERE genre_name = 'pop'
+
+mappingId	MAPID-e006b16790304c8db261f86b084dcec8(0)(0)
+target		<http://example.org/music-kg/genre/{genre_id}> a :RnBGenre . 
+source		SELECT genre_id
+			FROM Genre
+			WHERE genre_name = 'r&b'
+
+mappingId	MAPID-e006b16790304c8db261f86b084dcec8(0)(0)(0)
+target		<http://example.org/music-kg/genre/{genre_id}> a :ElectronicGenre . 
+source		SELECT genre_id
+			FROM Genre
+			WHERE genre_name = 'edm'
+
+mappingId	MAPID-e006b16790304c8db261f86b084dcec8(0)(0)(0)(0)
+target		<http://example.org/music-kg/genre/{genre_id}> a :RapGenre . 
+source		SELECT genre_id
+			FROM Genre
+			WHERE genre_name = 'rap'
+
+mappingId	MAPID-e006b16790304c8db261f86b084dcec8(0)(0)(0)(0)(0)
+target		<http://example.org/music-kg/genre/{genre_id}> a :LatinGenre . 
+source		SELECT genre_id
+			FROM Genre
+			WHERE genre_name = 'latin'
+
+mappingId	MAPID-57f8c97297e44807aeeabde7b640cc09
+target		<http://example.org/music-kg/album/{album_id}> a :StudioAlbum . 
+source		SELECT album_id
+			FROM AlbumType
+			WHERE album_type = 'StudioAlbum'
+
+mappingId	MAPID-6fd0b87cfb344bf1841031d46e20215e
+target		<http://example.org/music-kg/album/{album_id}> a :LiveAlbum . 
+source		SELECT album_id
+			FROM AlbumType
+			WHERE album_type = 'LiveAlbum'
+
+mappingId	MAPID-6fd0b87cfb344bf1841031d46e20215e(0)
+target		<http://example.org/music-kg/album/{album_id}> a :EP . 
+source		SELECT album_id
+			FROM AlbumType
+			WHERE album_type = 'EP'
+
+mappingId	MAPID-4cbe71a4576b46199271a87d675b18a3
+target		<http://example.org/music-kg/program/{concert_id}> a :Program ; :name "Program of Concert {concert_id}"^^xsd:string . 
+source		SELECT DISTINCT concert_id FROM ConcertTrack
+
+mappingId	MAPID-410d63ccae7849a5bbcd57fcafd83e14
+target		<http://example.org/music-kg/programitem/{concert_id}/{track_id}> a :ProgramItem ; :position {position}^^xsd:integer ; :isProgramItemOf <http://example.org/music-kg/program/{concert_id}> ; :performsTrack <http://example.org/music-kg/track/{track_id}> . 
+source		SELECT * FROM ConcertTrack
+
+mappingId	MAPID-b7ab4067854f431b8e2ff7eca9d32571
+target		<http://example.org/music-kg/producer/{producer_id}> a :Producer ; :firstName {first_name}^^xsd:string ; :lastName {last_name}^^xsd:string ; :nationality {nationality}^^xsd:string . 
+source		SELECT * FROM Producer
+
+mappingId	MAPID-aac29f8f7b394c6da3e61b6cc3d67264
+target		<http://example.org/music-kg/album/{album_id}> :producedBy <http://example.org/music-kg/producer/{producer_id}> . 
+source		SELECT * FROM AlbumProducer
+
+mappingId	MAPID-7226c8892af44728b4e06ab8b041c9c9
+target		<http://example.org/music-kg/session/{session_id}> a :RecordingSession ; :eventDate {session_date}^^xsd:date ; :recordedAt <http://example.org/music-kg/venue/{venue_id}> . 
+source		SELECT * FROM RecordingSession
+
+mappingId	MAPID-9fca9186900c49babd8f92da7c8f8c89
+target		<http://example.org/music-kg/music-kg/album/{album_id}> :recordedAt <http://example.org/music-kg/music-kg/venue/{venue_id}> . 
+source		SELECT * FROM RecordingSession
+
+mappingId	MAPID-4ed8f392041f43a0830c28715a227a4d
+target		<http://example.org/music-kg/music-kg/instrument/{instrument_id}> a :Instrument , :{instrument_type}Intrument , :{owl_class} ; :name {name}^^xsd:string ; :instrumentType {instrument_type}^^xsd:string . 
+source		SELECT * FROM Instrument
+]]
+

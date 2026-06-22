@@ -1,0 +1,16 @@
+venue_id,name,venue_type,location,capacity
+1,Wiener Stadthalle,Arena,Vienna,15000
+2,Musikverein,ConcertHall,Vienna,2000
+3,Staatsoper,Theater,Vienna,2284
+4,Volksoper,Theater,Vienna,1337
+5,Arena Wien,OutdoorVenue,Vienna,5000
+6,Gasometer,Arena,Vienna,4000
+7,Stadthalle Graz,Arena,Graz,8000
+8,Orpheum Graz,ConcertHall,Graz,700
+9,Mozarteum,ConcertHall,Salzburg,800
+10,Felsenreitschule,Theater,Salzburg,1500
+11,Rathaus Innsbruck,ConcertHall,Innsbruck,600
+12,Arena Linz,Arena,Linz,3000
+13,Rockhouse Salzburg,ConcertHall,Salzburg,500
+14,WUK Vienna,OutdoorVenue,Vienna,1200
+15,Porgy and Bess,ConcertHall,Vienna,350

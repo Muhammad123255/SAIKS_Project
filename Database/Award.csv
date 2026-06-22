@@ -1,0 +1,23 @@
+award_id,name,year,category,artist_id
+1,Grammy Lifetime Achievement Award,2018,Lifetime Achievement,1054
+2,Brit Award for Outstanding Contribution,2011,Outstanding Contribution,1054
+3,Grammy Award for Best Rap Album,2017,Best Rap Album,1162
+4,Grammy Award for Best Rap Song,2019,Best Rap Song,1162
+5,Billboard Music Award Artist of the Decade,2021,Artist of the Decade,1162
+6,DJ Mag #1 DJ in the World,2016,Best DJ,12
+7,DJ Mag #1 DJ in the World,2017,Best DJ,12
+8,DJ Mag #1 DJ in the World,2018,Best DJ,12
+9,Grammy Award for Best Dance Recording,2017,Best Dance Recording,4
+10,Billboard Music Award Top Dance/EDM Song,2017,Top Dance/EDM Song,4
+11,Grammy Award for Best Hard Rock Performance,1989,Best Hard Rock Performance,1058
+12,Rock and Roll Hall of Fame Inductee,2012,Hall of Fame,1058
+13,Grammy Award for Best Rock Album,2018,Best Rock Album,4858
+14,Grammy Award for Best Rock Performance,2022,Best Rock Performance,4858
+15,Grammy Award for Best New Artist,1991,Best New Artist,386
+16,Grammy Award for Best Pop Vocal Album,1998,Best Pop Vocal Album,386
+17,Grammy Award for Best Rap Album,1996,Best Rap Album,2851
+18,Grammy Award for Best Rap Solo Performance,1995,Best Rap Solo Performance,2851
+19,Grammy Award for Best Album,1998,Best Album,4650
+20,Rock and Roll Hall of Fame Inductee,1998,Hall of Fame,4650
+21,Grammy Award for Best Rap Album,1999,Best Rap Album,3610
+22,Rock and Roll Hall of Fame Inductee,2003,Hall of Fame,1649
