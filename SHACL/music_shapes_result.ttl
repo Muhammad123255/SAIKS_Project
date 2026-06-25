@@ -1,0 +1,918 @@
+PREFIX :        <http://example.org/music-ontology#>
+PREFIX dash:    <http://datashapes.org/dash#>
+PREFIX graphql: <http://datashapes.org/graphql#>
+PREFIX owl:     <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh:      <http://www.w3.org/ns/shacl#>
+PREFIX swa:     <http://topbraid.org/swa#>
+PREFIX tosh:    <http://topbraid.org/tosh#>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+
+[ rdf:type     sh:ValidationReport;
+  sh:conforms  false;
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/19179>;
+                 sh:resultMessage              "Track must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b0
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/19216>;
+                 sh:resultMessage              "Track must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b0
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/3203>;
+                 sh:resultMessage              "Track must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b0
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/18768>;
+                 sh:resultMessage              "Track must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b0
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/18612>;
+                 sh:resultMessage              "Track must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b0
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/18>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/17>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/19>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/21>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/20>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/22>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/5>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/4>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/3>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/2>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/1>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/9>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/8>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/7>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/6>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/14>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/13>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/16>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/15>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/10>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/12>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/11>;
+                 sh:resultMessage              "Album must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b1
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/18>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/17>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/3203>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/19>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/21>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/20>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/22>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/5>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/4>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/3>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/2>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/1>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/9>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/8>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/7>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/6>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/14>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/13>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/16>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/15>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/10>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/12>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/11>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/18768>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/19216>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/19179>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/18612>;
+                 sh:resultMessage              "Concert must have a title.";
+                 sh:resultPath                 :title;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b2
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/18>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/17>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/3203>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/19>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/21>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/20>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/22>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/5>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/4>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/3>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/2>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/1>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/9>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/8>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/7>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/6>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/14>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/13>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/16>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/15>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/10>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/12>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/11>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/18768>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/19216>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/19179>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/18612>;
+                 sh:resultMessage              "Concert must have an event date.";
+                 sh:resultPath                 :eventDate;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b3
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/18>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/17>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/3203>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/19>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/21>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/20>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/22>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/5>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/4>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/3>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/2>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/1>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/9>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/8>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/7>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/6>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/14>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/music-kg/venue/20>;
+                 sh:resultMessage              "Venue must have a name.";
+                 sh:resultPath                 :name;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b5
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/music-kg/venue/19>;
+                 sh:resultMessage              "Venue must have a name.";
+                 sh:resultPath                 :name;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b5
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/music-kg/venue/18>;
+                 sh:resultMessage              "Venue must have a name.";
+                 sh:resultPath                 :name;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b5
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/music-kg/venue/17>;
+                 sh:resultMessage              "Venue must have a name.";
+                 sh:resultPath                 :name;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b5
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/music-kg/venue/16>;
+                 sh:resultMessage              "Venue must have a name.";
+                 sh:resultPath                 :name;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b5
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/18612>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/19179>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/19216>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/programitem/1/18768>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/11>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/12>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/10>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/15>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/16>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ];
+  sh:result    [ rdf:type                      sh:ValidationResult;
+                 sh:focusNode                  <http://example.org/music-kg/award/13>;
+                 sh:resultMessage              "Concert must have a ticket price.";
+                 sh:resultPath                 :ticketPrice;
+                 sh:resultSeverity             sh:Violation;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent;
+                 sh:sourceShape                _:b4
+               ]
+] .
